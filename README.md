@@ -89,8 +89,8 @@ feature-scarce regime ( experiments confirm it).
 **Implementation note: ** The reps = 1 ZZ map is Hadamards
 followed by a purely diagonal phase layer, so each statevector has a closed form:
 `⟨k|φ(x)⟩ = 2^(−n/2)·exp(i·φ_k(x))`. We compute this in vectorized NumPy, which is
-validated against an explicit PennyLane circuit to ~1×10⁻¹⁵ (see
-`src/quantum_kernel.py`) and is ~1000× faster, making a 10-seed sweep tractable on
+validated against an explicit PennyLane circuit to ~1×10⁻¹⁵ 
+and is ~1000× faster, making a 10-seed sweep tractable on
 a laptop. The PennyLane circuit is retained as the reference encoder.
 
 ---
